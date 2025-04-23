@@ -44,14 +44,6 @@
     .button:hover {
       background-color: #5a3f2f;
     }
-
-    .back-button {
-      margin-top: 30px;
-      font-size: 16px;
-      color: #555;
-      text-decoration: underline;
-      cursor: pointer;
-    }
   </style>
 </head>
 <body>
@@ -70,11 +62,8 @@
   <button class="button" onclick="goToProtectedLink('LINK5')">الرابية</button>
   <button class="button" onclick="goToProtectedLink('LINK6')">عبدون</button>
 
-  <!-- زر رجوع -->
-  <div class="back-button" onclick="history.back()">⬅️ رجوع</div>
-
   <script>
-    const secretCode = "12345"; // ← هون بتحط الرقم السري اللي بدك ياه
+    const secretCode = "12345"; // ← الرقم السري
 
     function goToProtectedLink(link) {
       const input = prompt("الرجاء إدخال الرقم السري:");
