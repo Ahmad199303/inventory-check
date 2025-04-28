@@ -55,26 +55,18 @@
   <h1>نظام الجرد الأسبوعي</h1>
 
   <!-- الكبسات -->
-  <button type="button" class="button" onclick="goToProtectedLink('https://docs.google.com/forms/d/e/1FAIpQLSf8q0SANdqv0ClPM39N1szeCV8ian30cZqgFY9vQegpup6gpg/viewform', '1111')">المدينة المنورة</button>
-  <button type="button" class="button" onclick="goToProtectedLink('LINK2', '2222')">خلدا</button>
-  <button type="button" class="button" onclick="goToProtectedLink('LINK3', '3333')">الصويفية</button>
-  <button type="button" class="button" onclick="goToProtectedLink('LINK4', '4444')">ضاحية الأمير راشد</button>
-  <button type="button" class="button" onclick="goToProtectedLink('LINK5', '5555')">الرابية</button>
-  <button type="button" class="button" onclick="goToProtectedLink('LINK6', '1993')">عبدون</button>
+  <button type="button" class="button" onclick="goToLink('https://docs.google.com/forms/d/e/1FAIpQLSf8q0SANdqv0ClPM39N1szeCV8ian30cZqgFY9vQegpup6gpg/viewform')">المدينة المنورة</button>
+  <button type="button" class="button" onclick="goToLink('https://docs.google.com/forms/d/e/1FAIpQLScV1vHSmzUOoCjotqSGXTh_fsTCjHsPySHExjQbhKUSFlH61A/viewform?usp=header')">خلدا</button>
+  <button type="button" class="button" onclick="goToLink('https://docs.google.com/forms/d/e/1FAIpQLSd3zqQ80Dl1_sjqLS5k5CNv6US_BskeqK0K_sN1LXucwVBiEg/viewform?usp=header')">الصويفية</button>
+  <button type="button" class="button" onclick="goToLink('https://docs.google.com/forms/d/e/1FAIpQLSeNDiVQxY3ChTTYQiqk2weH-DknD1XqVFSSn1im9dHTLRpatQ/viewform?usp=header')">ضاحية الأمير راشد</button>
+  <button type="button" class="button" onclick="goToLink('https://docs.google.com/forms/d/e/1FAIpQLSe1DXnhWZFAV-DAY8uFZIhLOJEIUq-fMHPFaw6wcQqslmkppA/viewform?usp=header')">الرابية</button>
+  <button type="button" class="button" onclick="goToLink('https://docs.google.com/forms/d/e/1FAIpQLSfwN-5iRBPQVt-9GmAM2K3oBYuR2OqqU4U0yRfPiZc_MobM-g/viewform?usp=header')">عبدون</button>
 
   <script>
-    function goToProtectedLink(link, requiredCode) {
-      const input = prompt("الرجاء إدخال الرقم السري:");
-      if (input === requiredCode) {
-        window.location.href = link;
-      } else {
-        alert("الرقم السري خاطئ ❌");
-      }
+    function goToLink(link) {
+      window.location.href = link;
     }
   </script>
 
 </body>
 </html>
-
-
-<!-- تعديل بسيط لتفعيل GitHub Pages -->
